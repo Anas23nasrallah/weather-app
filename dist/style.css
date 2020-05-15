@@ -8,7 +8,6 @@ body{
     background-image: url("../giphy.gif");
     background-repeat:no-repeat;
     background-size: 1000px 1000px; 
-    
 }
 
 #container{
@@ -45,7 +44,7 @@ body{
 }
 
 .city{
-    background-color:rgba(0,0,255,0.2);
+    background-color:rgba(0,0,255,0.1);
     display: grid;
     grid-template-areas: 
     'btn city temp con';
@@ -113,12 +112,10 @@ body{
 }
 
 .add-btn{
-
     background-color: green;
 }
 
 .remove-btn{
-
     background-color: red;
 }
 
