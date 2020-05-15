@@ -9,7 +9,7 @@ const router = express.Router()
 const axios = require('axios')
 const mongoose = require('mongoose')
 const City = require("../../model/City.js")
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/weatherDB")
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/weatherDB", {useNewUrlParser: true})
 const APIkey = "db53963c0dc3c0c6291a3c33e211870c"
 
 router.get('/city/:cityName', async function (req, res) {
